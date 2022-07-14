@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Race Car Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Race Car Game</h1>
+        <div class="game">
+            <div class="car" id="computer"><img src="images/bluecar.png"></div>
+            <div class="car" id="player"><img src="images/aston-martin.jpg"></div>
+        </div>
+        <div class="bottomRow">
+            <div class="results">
+        <p id="score">SCORE:</p> 
+        <button id="restart" onclick="location.reload()">RESTART</button>
+        <button id="nextLevel" onclick="changeCar()">NEXT LEVEL</button>
+            </div>
+            <div class="chooseCharacter">
+                <h1 id="carChoiceHeader"> Choose Your Car </h1>
+                        <div class="cars">
+                            <!-- help changing pic onclick -->
+                <div class="choice" id="1">
+                    <img src="images/aston-martin.jpg">
+                    <h2>Aston Martin</h2>
+                </div>
+                <div class="choice" id="2">
+                    <img src="images/bugatti.png">
+                    <h2>Bugatti</h2>
+                </div>
+                <div class="choice" id="3">
+                    <img src="images/ferrari.png">
+                    <h2>Ferrai</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
